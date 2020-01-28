@@ -1,0 +1,28 @@
+
+<div class="page-container">
+
+    <img class="signature" src="https://hadden-personal.s3-us-west-1.amazonaws.com/test-signature.svg"/>
+    <mat-toolbar color="accent" id="toolbar-container">
+        <a mat-button [routerLink]="['home']">HOME </a>
+        <a mat-button [routerLink]="['about']">ABOUT </a>
+        <a mat-button [routerLink]="['contact']">CONTACT</a>
+    </mat-toolbar>
+
+    <div class="content-container">
+        <img *ngIf="page" class="profile-pic" [src]="page.image"/>
+
+        <mat-card>
+            <mat-card-title>
+                {{ page.title }}
+            </mat-card-title>
+            <mat-card-subtitle>
+                {{ page.subtitle }}
+            </mat-card-subtitle>
+            <mat-card-content>
+                {{ page.content }}
+            </mat-card-content>
+        </mat-card>
+
+    </div>
+
+</div>

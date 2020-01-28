@@ -1,0 +1,20 @@
+.signature {
+    height: 200px;
+    width: 100%;
+}
+
+#toolbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}.profile-pic {
+    height: 300px;
+    width: 300px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
